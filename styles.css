@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Ewert');
+html{
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: linear-gradient(45deg, #ee00b8, #02e807);
+    margin: 0;
+    padding: 0;
+}
+.header p{
+    margin: 0;
+    padding: 0;
+    font-family: "Ink Free";
+    color: cyan;
+}
+h1{
+    padding: 0;
+    margin: 0;
+    color: orange;
+}
+body {
+    font-family: 'Ewert', cursive;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+
+    text-align: center;
+    background-color: blueviolet;
+    background-image: url("beanBackground.jpg");
+    background-repeat: repeat;
+    background-size: 100px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+div img{
+    width: 100%;
+    height: auto;
+    align-content: center;
+
+}
+.site{
+    flex-grow: 1;
+}
+.extraNavigation{
+    display: none;
+}
+.picAndNavigation{
+    flex: 1;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+.leftArrow, .rightArrow{
+flex-basis: 15%;
+}
+.pic{
+
+    flex-basis: 70%;
+
+}
+.footer{
+    background: linear-gradient(to top, #7c0603 20%, #917500 50%, #ac1e00 80%);
+}
+.footer h1{
+    color: crimson;
+}
+@media screen and (max-width: 600px){
+    .leftArrow,.rightArrow{
+        flex-basis: 0;
+    }
+    .pic{
+        flex-basis: 100%;
+    }
+    .extraNavigation{
+        display: flex;
+    }
+}
